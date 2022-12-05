@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.15.4/css/all.min.css"
+    />
+    <title>Movie Searcher</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="content">
+        <div class="sub_media">
+          <div class="nav_wrapper">
+            <a class="logo"> Mis Favoritos de Todos los Tiempos </a>
+            <a class="#my_media" href="./my_media.html">Mis Favoritos</a>
+            <a class="movies_search" href="./movies_search.html">Buscar Peliculas</a>
+            <a class="#series_search"href="./series_search.html">Buscar Series</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="inner_content new_index_movies">
+      <div class="content_wrapper wrap">
+        <div class="title">
+          <h2>Bienvenido al maravilloso mundo del cine.</h2>
+          <h3>Millones de Peliculas, TV Shows y Actores/Actrices por descubrir.</h3>
+          <h3>Centro de busqueda de peliculas:</h3>
+          <h3><img src="./powered_by.png" width="160" height="55" /></h3>
+        </div>
+        <div class="search-nav">
+          <form id="form" style="margin: auto; max-width: 500px">
+            <input
+              type="text"
+              placeholder="Peliculas, TV Shows..."
+              id="search"
+              class="search"
+            />
+            <button type="submit" value="Buscar">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="main">
+      <div class="movie">
+        <img
+          src="https://img.freepik.com/premium-vector/movie-black-logo-design-premium_39063-25.jpg?w=2000"
+          alt="image"
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">5.0</span>
+        </div>
+        <div class="type-data">
+          <h3>Serie</h3>
+      </div>
+        <div class="overview">
+            <span class="release_date"> 2022-05-22 </span>
+          <h3>Descripcion</h3>
+          <p align="justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
+          faucibus tellus. Sed et magna scelerisque, rhoncus lectus a, ultrices
+          ipsum. Duis aliquam sapien quam. Sed nec nibh quis nulla malesuada
+          lobortis. Orci varius natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Proin sit amet felis ut velit pretium
+          interdum.
+        </p>
+        </div>
+        <div class="action-buttons">
+          <div class="tmdb">
+            <button type="submit" class="tmdb" id="id">Ver en TMDB</button>
+          </div>
+          <div class="save-db">
+            <button type="submit" class="save-tmdb" id="id">Guardar</button>
+          </div>
+        </div>
+      </div>
+      <div class="TV">
+        <img
+          src="https://img.freepik.com/premium-vector/movie-black-logo-design-premium_39063-25.jpg?w=2000"
+          alt="image"
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">5.0</span>
+        </div>
+        
+        <div class="overview">
+            <span class="release_date"> 2022-05-22 </span>
+          <h3>Descripcion</h3>
+          <p align="justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
+          faucibus tellus. Sed et magna scelerisque, rhoncus lectus a, ultrices
+          ipsum. Duis aliquam sapien quam. Sed nec nibh quis nulla malesuada
+          lobortis. Orci varius natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Proin sit amet felis ut velit pretium
+          interdum.
+        </p>
+        </div>
+        <div class="action-buttons">
+          <div class="tmdb">
+            <button type="submit" class="tmdb" id="Btn_tmdb">Ver en TMDB</button>
+          </div>
+          <div class="save-db" action="./send.php" method="post">
+            <button type="submit" class="save-tmdb" id="Btn_Guardar">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./movies_search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  </body>
+</html>

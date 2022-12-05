@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Movie Searcher</title>
+  </head>
+
+  <body style="background-image: url(./blockbuster.jpg)">
+    <header>
+        <div class="content" >
+          <div class="sub_media">
+            <div class="nav_wrapper">
+              <a class="logo">
+                <img
+                  src="https://filmboard.mtu.edu/static/bucket/923aeb4a2b10f3e3cd793b3bde595df83c818cd5a4ea5d71486438f4b063c63ffa48fd6bc166ede140cd3d1f0a5e5c5db7388b63d1af96c9c69ebdce2c833acf.png"
+                  width="160"
+                  height="55"
+                />
+              </a>
+              <a class="active" href="./my_media.html">Mis Peliculas</a>
+              <a class="movies_search" href="./movies_search.html"
+                >Buscar Peliculas</a
+              >
+              <a class="series_search" href="./series_search.html"
+                >Buscar Series</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    <main id="main">
+        <div class="container" id="form">
+            <form id="contact">
+              <h3> Pelicula XYZ</h3>
+              <h4> Formulario de Actualizacion/Modificacion</h4>
+              <fieldset>
+                <label> ID </label>
+                <input readonly placeholder="0000001"  type="text" tabindex="1">
+              </fieldset>
+              <fieldset>
+                <label> Titulo </label>
+                <input placeholder="" type="text" tabindex="2" autofocus>
+              </fieldset>
+              <fieldset>
+                <label> Calificacion (Ejemplo: 6.6)*</label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <label> Fecha de estreno (formato yyyy-mm-dd)* </label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <label> Imagen URL (1080x1050)*</label>
+                <input placeholder="" type="url" tabindex="4" >
+              </fieldset>
+              <fieldset>
+                <label> Descripcion </label>
+                <textarea placeholder="" tabindex="5"></textarea>
+              </fieldset>
+              <fieldset>
+                <label> Tipo </label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <button type="submit" > Guardar </button>
+              </fieldset>
+              <p> * Si no se cumplen con las caracteristicas no se mostraran los datos de forma correcta</p>
+            </form>
+          </div>
+        </div>
+    </main>
+    <script src="./update.js"></script>
+  </body>
+  
+</html>

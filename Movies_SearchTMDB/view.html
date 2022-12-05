@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="card.css" />
+    <title>Movie Searcher</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="content">
+        <div class="sub_media">
+          <div class="nav_wrapper">
+            <a class="logo">
+              <img
+                src="./powered_by.png"
+                width="160"
+                height="55"
+              />
+            </a>
+            <a class="active" href="./my_media.html">Mis Favoritos</a>
+            <a class="movies_search" href="./movies_search.html"
+              >Buscar Peliculas</a
+            >
+            <a class="series_search" href="./series_search.html"
+              >Buscar Series</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="inner_content new_index_series">
+      <div class="content_wrapper wrap">
+        <div class="title">
+          <h2>Bienvenido al maravilloso mundo del cine.</h2>
+          <h3>
+            Millones de Peliculas, TV Shows y Actores/Actrices por descubrir.
+          </h3>
+          <h3>Powered by TMBD</h3>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="main">
+        <div class="wrapper">
+            <div class="container">
+               <div id="result">
+                <div class="info">
+                    <img src="https://img.freepik.com/premium-vector/movie-black-logo-design-premium_39063-25.jpg?w=2000" class='poster'>
+                    <div>
+                      <h2>${data.Title}</h2>
+                      <div class="rating">
+                        <img src="https://dl.dropbox.com/s/c0olu3aadxcm3p7/star-icon.svg?raw=1">
+                        <h4>${data.imdbRating}</h4>
+                      </div> 
+                      <div class="details">
+                        <span>4.5</span>
+                        <span>2202-11-22</span>
+                        <span>1:45h</span>
+                      </div>
+                      <div class="genre">
+                        <div>${data.Genre.split(",").join("</div><div>")}</div>
+                      </div>   
+                    </div>
+                  </div>
+                  <h3>Plot:</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                    eget faucibus tellus. Sed et magna scelerisque, rhoncus lectus a,
+                    ultrices ipsum. Duis aliquam sapien quam. Sed nec nibh quis nulla
+                    malesuada lobortis. Orci varius natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Proin sit amet felis ut
+                    velit pretium interdum.</p>
+                  <h3>Cast:</h3>
+                  <p>Multiples Actores</p>
+                  
+               </div>
+            </div>
+            <div class="credit">Powered by TMDB </div>
+          </div>
+    </main>
+    
+    <footer>
+        <p class="copyright-text">&copy; 2022 Copyright All Rights Reserved Designed by <span class="mark">Carlos Corona</span></p>
+       <p class="copyright-text">This product uses the TMDb API.</p>
+     </footer>
+
+  </body>
+</html>

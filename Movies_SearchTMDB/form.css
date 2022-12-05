@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #005b9f 0%, #5eb8ff 100%);
+    height: 100px;
+    width: 100%;
+}
+
+header div.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header div.sub_media {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+}
+header div.nav_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: visible;
+}
+
+header a.logo {
+    display: flex;
+    margin-right: 40px;
+    width: 160px;
+    height: 55px;
+}
+
+header a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*white-space: nowrap;*/
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    width: 154px;
+    height: 20px;
+}
+
+.header-name {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 120;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777;
+}
+
+@media screen and (max-width: 600px) {
+    header a {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  }
+  
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"],
+#form input[type="url"],
+#form textarea,
+#form button[type="button"] {
+  font: 450 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#form {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#form h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#form h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"],
+#form input[type="url"],
+#form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#form input[type="text"]:hover,
+#form input[type="number"]:hover,
+#form input[type="tel"]:hover,
+#form input[type="url"]:hover,
+#form textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#form textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#form button[type="button"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#form button[type="button"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#form button[type="button"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#form input:focus,
+#form textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
